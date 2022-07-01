@@ -1,9 +1,2 @@
 # ignore node modules 
 node_modules/
-
-# Logs
-logs
-*.log
-
-#tmp directories
-tmp/
