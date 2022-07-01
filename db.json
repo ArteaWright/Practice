@@ -1,0 +1,27 @@
+[{
+    "id": 1,
+    "first_name": "Joanie",
+    "last_name": "Verrell",
+    "gender": "Female"
+  }, {
+    "id": 2,
+    "first_name": "Micki",
+    "last_name": "Lovelock",
+    "gender": "Female"
+  }, {
+    "id": 3,
+    "first_name": "Bev",
+    "last_name": "Patriche",
+    "gender": "Male"
+  }, {
+    "id": 4,
+    "first_name": "Auberon",
+    "last_name": "Bloom",
+    "gender": "Male"
+  }, {
+    "id": 5,
+    "first_name": "Romona",
+    "last_name": "Adnet",
+    "gender": "Non-binary"
+}
+]
