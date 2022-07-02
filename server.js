@@ -23,6 +23,8 @@ server.listen(port);
   })
   .then((info) => {
 
+    console.log(info);
+
     //  POST Third party info to JSON-server
     axios({
       method:"POST", 
@@ -32,8 +34,6 @@ server.listen(port);
         "Content-Type":"application/json"
       }
     })
-
-    console.log(info);
   })
   .catch(function (error) {
       console.error(error);
