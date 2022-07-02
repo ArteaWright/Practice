@@ -32,6 +32,8 @@ server.listen(port);
         "Content-Type":"application/json"
       }
     })
+
+    console.log(info);
   })
   .catch(function (error) {
       console.error(error);
