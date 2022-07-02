@@ -19,22 +19,23 @@ server.listen(port);
     })
     .then(res => {
       const info = res.data.results;
-      console.log(info)
+      console.log(info);
+      return info;
   })
-  .then((info) => {
+  // .then((info) => {
 
-    console.log(info);
+  //   console.log(info);
 
-    //  POST Third party info to JSON-server
-    axios({
-      method:"POST", 
-      url:"https://artea-server-app.herokuapp.com/users", 
-      data:JSON.stringify(info), 
-      headers: {
-        "Content-Type":"application/json"
-      }
-    })
-  })
+  //   //  POST Third party info to JSON-server
+  //   axios({
+  //     method:"POST", 
+  //     url:"https://artea-server-app.herokuapp.com/users", 
+  //     data:JSON.stringify(info), 
+  //     headers: {
+  //       "Content-Type":"application/json"
+  //     }
+  //   })
+  // })
   .catch(function (error) {
       console.error(error);
   });
