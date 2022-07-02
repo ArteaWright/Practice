@@ -1,1 +1,1 @@
-console.log({res});
+console.log({data});
