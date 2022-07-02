@@ -24,7 +24,7 @@ server.listen(port);
   .then((info) => {
 
     //  POST Third party info to JSON-server
-    await axios({
+    axios({
       method:"POST", 
       url:"https://artea-server-app.herokuapp.com/users", 
       data:JSON.stringify(info), 
