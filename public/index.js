@@ -9,10 +9,4 @@ const getDoctors = async () => {
 }
 
 
-
-
-
-
-
-
-window.addEventListener("DOMContentLoaded", () => getDoctors)
+window.addEventListener("DOMContentLoaded", () => getDoctors());
