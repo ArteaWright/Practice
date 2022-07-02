@@ -18,7 +18,7 @@ server.listen(port);
       url:"https://artea-server-app.herokuapp.com/users"
     })
     .then(res => {
-      console.log(res);
+      console.log({res});
   })
   // .then(() => {
   
