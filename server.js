@@ -41,3 +41,4 @@ server.listen(port);
   });
   }());
 
+  export {data}
