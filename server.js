@@ -40,5 +40,3 @@ server.listen(port);
       console.error(error);
   });
   }());
-
-  export {data}
