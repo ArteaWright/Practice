@@ -1,5 +1,4 @@
-const { default: axios } = require("axios");
-
+// const { default: axios } = require("axios");
 (function() {
 
   // Get Third party API
