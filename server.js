@@ -18,7 +18,7 @@ server.listen(port);
       url:"https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=&taxonomy_description=Obstetrics+%26+Gynecology&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=charlotte&state=nc&postal_code=&country_code=&limit=1&skip=&pretty=on&version=2.1"
     })
     .then(res => {
-      const data = res;
+      return data = res;
       
   }).then((data) => {
     console.log(data);
