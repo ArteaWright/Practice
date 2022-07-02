@@ -10,29 +10,29 @@ server.use(router);
 server.listen(port);
 
 
-(function() {
+(async function() {
 
     // Get Third party API
-    axios({
+    await axios({
       method: "GET", 
       url:"https://npiregistry.cms.hhs.gov/api/?number=&enumeration_type=&taxonomy_description=Obstetrics+%26+Gynecology&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=charlotte&state=nc&postal_code=&country_code=&limit=1&skip=&pretty=on&version=2.1"
     })
     .then(res => {
-      const info = res.data;
+      const info = res.data.results;
       console.log(info)
   })
-  // .then((info) => {
+  .then((info) => {
 
-  //   //  POST Third party info to JSON-server
-  //   axios({
-  //     method:"POST", 
-  //     url:"https://artea-server-app.herokuapp.com/users", 
-  //     data:{info}, 
-  //     headers: {
-  //       "Content-Type":"application/json"
-  //     }
-  //   })
-  // })
+    //  POST Third party info to JSON-server
+    await axios({
+      method:"POST", 
+      url:"https://artea-server-app.herokuapp.com/users", 
+      data:JSON.stringify(info), 
+      headers: {
+        "Content-Type":"application/json"
+      }
+    })
+  })
   .catch(function (error) {
       console.error(error);
   });
