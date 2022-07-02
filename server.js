@@ -16,6 +16,7 @@ server.listen(port);
 (function() {
 
     // Get Third party API
+    app.set("view engine", "ejs")
     app.get('/', (req, res) => {
 
       axios({
@@ -26,9 +27,6 @@ server.listen(port);
         var data = res;
         console.log({data});
     })
-    .catch(function (error) {
-        console.error(error);
-    });
 
     })
 
