@@ -21,7 +21,16 @@ server.listen(port);
       return data = res;
       
   }).then((data) => {
-    console.log(data);
+
+    //  POST Third party info to JSON-server
+    axios({
+      method:"POST", 
+      url:"https://artea-server-app.herokuapp.com/users", 
+      data:{data}, 
+      headers: {
+        "Content-Type":"application/json"
+      }
+    })
   })
   .catch(function (error) {
       console.error(error);
