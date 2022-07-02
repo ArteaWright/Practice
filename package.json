@@ -9,6 +9,7 @@
   "author": "Artea Wright",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
     "json-server": "^0.17.0"
   }
 }
