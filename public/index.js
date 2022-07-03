@@ -9,6 +9,7 @@ const getDoctors = async () => {
 
     // perform DOM manipulation
     let template = '';
+    
     info[0].map(item => {
         template += `
         <div class="info-container">
