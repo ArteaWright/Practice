@@ -11,6 +11,7 @@ const getDoctors = async () => {
     // perform DOM manipulation
     let template = '';
     let address = '';
+    
     info[0].map(item => {
         template += `
         <div>
@@ -22,11 +23,12 @@ const getDoctors = async () => {
         </div>
         </div>
         `
-        item.addresses.map(address => {
-            address += `
-               <div>${address}</div> 
-            `
-        } )
+    })
+
+    info[0].address.map(address => {
+        address += `
+           <div>${address.address}</div> 
+        `
     })
 
     // Adding fetch content to HTML 
