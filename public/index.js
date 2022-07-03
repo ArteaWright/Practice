@@ -11,7 +11,7 @@ const getDoctors = async () => {
     // perform DOM manipulation
     let template = '';
     let address = '';
-    
+
     info[0].map(item => {
         template += `
         <div>
@@ -25,7 +25,7 @@ const getDoctors = async () => {
         `
     })
 
-    info[0].address.map(address => {
+    info[0].addresses.map(address => {
         address += `
            <div>${address.address}</div> 
         `
