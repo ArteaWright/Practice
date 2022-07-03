@@ -9,7 +9,7 @@ const getDoctors = async () => {
 
     let template = '';
     info[0].forEach(item => {
-        template += `<div>${JSON.stringify(item.basic)}</div>`
+        template += `<div>${JSON.stringify(item.basic.first_name)}</div>`
     })
 
     // Adding fetch content to HTML 
