@@ -10,13 +10,14 @@ const getDoctors = async () => {
     // perform DOM manipulation
     let template = '';
     info[0].map(item => {
-        template += `<div>
+        template += `
+        <div>
         <h3>${item.basic.first_name}</h3>
         <h3>${item.basic.middle_name}</h3>
         <h3>${item.basic.last_name}</h3>
         <div>
         <p>${item.basic.gender}</p>
-        <p>${item.addresses.address_1}</p>
+        <p>${JSON.stringify(item.addresses)}</p>
         </div>
         </div>
         `
