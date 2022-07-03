@@ -12,14 +12,10 @@ const getDoctors = async () => {
     info[0].map(item => {
         template += `
         <div class="info-container">
-        <h3 class="first-name">
-        ${item.basic.first_name}
-        </h3>
-        <h3 class="middle-name">
-        ${item.basic.middle_name}
-        </h3>
-        <h3 class="last-name">
-        ${item.basic.last_name}
+        <h3 class="name">
+        ${item.basic.first_name} 
+        ${item.basic.middle_name} 
+        ${item.basic.last_name} 
         </h3>
         <div class="address-container">
         <p>${item.basic.gender}</p>
