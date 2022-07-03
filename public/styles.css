@@ -6,7 +6,9 @@
 }
 
 .info-container {
-    border: 1px solid black;
+    border: 1px solid gray;
+    box-shadow: 3px 2px 2px;
+    background-color: gray;
     width: 90%;
     height: fit-content;
     padding: 5px;
