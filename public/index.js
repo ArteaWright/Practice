@@ -5,11 +5,11 @@ const getDoctors = async () => {
     let url = "https://artea-server-app.herokuapp.com/users";
 
     const response = await fetch(url);
-    const info = await response;
+    const info = await response.json();
 
     let template = '';
-    info.forEach(item => {
-        template += `<div>${item.basic}</div>`
+    info[0].forEach(item => {
+        template += `<div>${JSON.stringify(item.basic)}</div>`
     })
 
     // Adding fetch content to HTML 
