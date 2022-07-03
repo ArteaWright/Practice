@@ -20,7 +20,6 @@ const getDoctors = async () => {
         <p>
         ${item.addresses[0].address_1}, 
         ${item.addresses[0].address_2}
-        ${item.addresses[0].address_purpose},
         ${item.addresses[0].city},  
         ${item.addresses[0].country_name},
         ${item.addresses[0].state}
