@@ -5,7 +5,7 @@ const getDoctors = async () => {
     let url = "https://artea-server-app.herokuapp.com/users";
 
     const response = await fetch(url);
-    const info = await response.json();
+    const info = await response;
 
     let template = '';
     info[0].forEach(item => {
