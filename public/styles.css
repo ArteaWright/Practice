@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.info-container {
+    border: 1px solid black;
+    width: 90%;
+    height: fit-content;
+    padding: 5px;
+}

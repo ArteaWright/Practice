@@ -1,7 +1,6 @@
 //  fetch data from Server 
 
 const content = document.querySelector('.API');
-const contentMore = document.querySelector('add');
 const getDoctors = async () => {
     let url = "https://artea-server-app.herokuapp.com/users";
 
@@ -10,30 +9,37 @@ const getDoctors = async () => {
 
     // perform DOM manipulation
     let template = '';
-    let address = '';
-
     info[0].map(item => {
         template += `
-        <div>
-        <h3>${item.basic.first_name}</h3>
-        <h3>${item.basic.middle_name}</h3>
-        <h3>${item.basic.last_name}</h3>
-        <div>
+        <div class="info-container">
+        <h3 class="first-name">
+        ${item.basic.first_name}
+        </h3>
+        <h3 class="middle-name">
+        ${item.basic.middle_name}
+        </h3>
+        <h3 class="last-name">
+        ${item.basic.last_name}
+        </h3>
+        <div class="address-container">
         <p>${item.basic.gender}</p>
+        <p>
+        ${item.addresses[0].address_1}, 
+        ${item.addresses[0].address_2}
+        ${item.addresses[0].address_purpose},
+        ${item.addresses[0].city},  
+        ${item.addresses[0].country_name},
+        ${item.addresses[0].postal_code}
+        ${item.addresses[0].state}
+        ${item.addresses[0].telephone_number}      
+        </p>
         </div>
         </div>
-        `
-    })
-
-    info[0].addresses.map(address => {
-        address += `
-           <div>${address.address}</div> 
         `
     })
 
     // Adding fetch content to HTML 
     content.innerHTML = template;
-    contentMore.innerHTML = address; 
 }
 
 
