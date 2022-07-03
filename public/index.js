@@ -16,7 +16,7 @@ const getDoctors = async () => {
         <h3>${item.basic.last_name}</h3>
         <div>
         <p>${item.basic.gender}</p>
-        <p>${item.basic.addresses}</p>
+        <p>${item.addresses}</p>
         </div>
         </div>
         `
