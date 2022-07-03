@@ -17,7 +17,7 @@ const getDoctors = async () => {
         <h3>${item.basic.last_name}</h3>
         <div>
         <p>${item.basic.gender}</p>
-        <p>${JSON.stringify(item.addresses[0].address_1)}</p>
+        <p>${item.addresses[0].address_1}</p>
         </div>
         </div>
         `
