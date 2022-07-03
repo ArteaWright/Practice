@@ -1,11 +1,19 @@
 //  fetch data from Server 
+
+const content = document.querySelector('.API');
 const getDoctors = async () => {
     let url = "https://artea-server-app.herokuapp.com/users";
 
     const response = await fetch(url);
     const info = await response.json();
 
-    console.log(info[0]);
+    let template = '';
+    info[0].forEach(item => {
+        template += `<div>${info[0].basic}</div>`
+    })
+
+    // Adding fetch content to HTML 
+    content.innerHTML = template;
 }
 
 
