@@ -8,7 +8,7 @@ const getDoctors = async () => {
     const info = await response.json();
 
     let template = '';
-    info[0].forEach(item => {
+    info[0].map(item => {
         template += `<div>${JSON.stringify(item.basic.first_name)}</div>`
     })
 
